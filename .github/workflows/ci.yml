@@ -24,6 +24,8 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
+      - name: New Task to print line
+        run: echo "Printing line..."
 
       - name: Build and Push docker image
         uses: mr-smithers-excellent/docker-build-push@v4
